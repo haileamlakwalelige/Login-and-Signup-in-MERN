@@ -21,11 +21,11 @@ const Register = () => {
           className="placeholder:pl-2 px-2 py-1 border-2 border-gray-500 mr-6" />
       </div>
       <div className="px-3 pr-6 py-3">
-          <button className="bg-green-600 text-white py-1 px-2 text-center w-full">Login</button>
+          <button className="bg-green-600 text-white py-1 px-2 text-center w-full">Register</button>
       </div>
       <h1 className="pl-3">Already have an account? </h1>
       <div className="px-3 pr-6 py-3">
-          <button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign Up</button>
+          <button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign In</button>
       </div>
   </div>
   </div>
