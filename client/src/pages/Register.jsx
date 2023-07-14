@@ -1,8 +1,11 @@
 // import React from 'react'
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+    const [name, setName]=useState("");
+    const [email, setEmail]=useState("");
+    const [password, setPassword] = useState("");
   return (
     <div className="flex bg-white items-center font-serif text-black">
     <div className="m-auto shadow-2xl w-4/12 h-4/6 mt-32 py-6 shadow-black rounded">
@@ -10,16 +13,22 @@ const Register = () => {
       <div className="pl-3 flex flex-col pt-2">
           <label className="font-bold">Full Name</label>
           <input type="email" placeholder="Enter Full Name"
+          value={name}
+          onChange={(e)=>setName(e.target.value)}
           className="placeholder:pl-2 px-2 py-1 border-2 border-gray-500 mr-6" />
       </div>
       <div className="pl-3 flex flex-col">
           <label className="font-bold">Email</label>
           <input type="email" placeholder="Enter Email"
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
           className="placeholder:pl-2 px-2 py-1 border-2 border-gray-500 mr-6" />
       </div>
       <div className="pl-3 flex flex-col pt-2">
           <label className="font-bold">Password</label>
           <input type="email" placeholder="Enter Password"
+          value={password}
+          onChange={(e)=>setPassword(e.target.value)}
           className="placeholder:pl-2 px-2 py-1 border-2 border-gray-500 mr-6" />
       </div>
       <div className="px-3 pr-6 py-3">
