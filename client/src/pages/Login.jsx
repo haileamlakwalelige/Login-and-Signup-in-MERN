@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Link } from "react-router-dom";
+
 
 
 const Login=()=>{
@@ -22,7 +24,7 @@ const Login=()=>{
             </div>
             <h1 className="pl-3">Don't have an account? </h1>
             <div className="px-3 pr-6 py-3">
-                <button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign Up</button>
+                <Link to="/register"><button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign Up</button></Link>
             </div>
         </div>
         </div>
