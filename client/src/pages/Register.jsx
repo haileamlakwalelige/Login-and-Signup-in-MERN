@@ -9,7 +9,11 @@ const Register = () => {
     const [email, setEmail]=useState("");
     const [password, setPassword] = useState("");
     const navigate=useNavigate();
+    const [isClicked, setIsClicked] = useState(false);
 
+    const handleClick = () => {
+     setIsClicked(true);
+    }
     const handleSubmit=(e)=>{
         e.preventDefault();
         axios.post("http://localhost:3001/register", {name, email, password})
@@ -42,7 +46,7 @@ const Register = () => {
           className="placeholder:pl-2 px-2 py-1 border-2 border-gray-500 mr-6" />
       </div>
       <div className="px-3 pr-6 py-3">
-          <button type="submit" className="bg-green-600 text-white py-1 px-2 text-center w-full">Register</button>
+          <button onClick={handleClick} type="submit" className={`bg-green-600 text-white py-1 px-2 text-center w-full ${isClicked ? 'opacity-50' : 'hover:bg-blue-700'}`}>Register</button>
       </div>
       <h1 className="pl-3">Already have an account? </h1>
       <div className="px-3 pr-6 py-3">
