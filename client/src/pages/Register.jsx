@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { Link } from "react-router-dom";
+
 const Register = () => {
   return (
     <div className="flex bg-white items-center font-serif text-black">
@@ -25,7 +27,7 @@ const Register = () => {
       </div>
       <h1 className="pl-3">Already have an account? </h1>
       <div className="px-3 pr-6 py-3">
-          <button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign In</button>
+      <Link to="/login">          <button className="text-black border-2 border-gray-600 font-bold py-1 px-2 text-center w-full">Sign In</button></Link>
       </div>
   </div>
   </div>
